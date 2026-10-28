@@ -1,4 +1,8 @@
-    1  ls
+
+9129d0
+
+
+1  ls
     2  curl --proto '=https' --tlsv1.2 -LsSf https://install.aiken-lang.org | sh
     3  source ~/.bashrc
     4  find $HOME -type f -name aikup 2>/dev/null
