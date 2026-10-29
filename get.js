@@ -32,14 +32,27 @@ if (utxos.length === 0) {
 }
 
 
-const stateUtxo =
-  utxos[0];
+//const stateUtxo =
+//  utxos[0];
 
-if (!stateUtxo.datum) {
+//if (!stateUtxo.datum) {
+//  throw new Error(
+//    "State UTXO has no inline datum."
+//  );
+//}
+
+const stateUtxo = utxos.find(
+  utxo => utxo.datum != null
+);
+
+if (!stateUtxo) {
   throw new Error(
-    "State UTXO has no inline datum."
+    "No UTXO with an inline datum found."
   );
 }
+
+
+
 
 
 // Decode the Plutus datum
