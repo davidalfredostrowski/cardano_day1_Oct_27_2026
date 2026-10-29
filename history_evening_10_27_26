@@ -38,7 +38,7 @@
    34  vi set.js
    35  vi get.js
    36  vi balance.js
-   37  node init.js
+   37  // do not do not run more thah once!       node init.js
    38  node balance.js
    39  node set.js   "tuesday_oct_27_2026"
    40  node balance.js
